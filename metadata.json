@@ -1,0 +1,8 @@
+{
+  "name": "Goldn Portfolio",
+  "description": "Premium personal portfolio for Goldn, a creative developer and designer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
