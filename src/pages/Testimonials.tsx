@@ -17,7 +17,7 @@ export default function Testimonials() {
         <div className="p-8 md:p-12 border border-white/10 rounded-3xl bg-surface relative">
            <div className="absolute top-0 right-10 -translate-y-1/2 text-6xl text-accent font-display leading-none">"</div>
            <p className="text-xl md:text-2xl font-light italic text-gray-300 leading-relaxed mb-8">
-             "Goldn completely transformed our digital presence. The attention to detail and conversion strategy resulted in a 40% increase in digital bookings."
+             "PixelForge Studio completely transformed our digital presence. The attention to detail and conversion strategy resulted in a 40% increase in digital bookings."
            </p>
            <div className="flex items-center justify-center gap-4">
              <div className="w-12 h-12 rounded-full bg-primary border border-white/20"></div>
