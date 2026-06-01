@@ -23,7 +23,7 @@ export const projects = [
     keyResults: ["Viral Campaign Reach", "Boosted Engagement"],
     technologies: ["Next.js", "Framer Motion", "WebGL"],
     liveDemoUrl: "https://dr-pepper1.vercel.app/",
-    thumbnail: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=1600",
+    thumbnail: "https://www.eatthis.com/wp-content/uploads/sites/4/2018/12/dr-pepper-ice.jpg?quality=82&strip=1&w=640",
     coverImage: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=2400",
     problem: "To create an engaging promotional platform that resonates with a younger demographic.",
     solution: "Built a highly interactive, fast-paced single-page experience with bold typography and dynamic transitions.",
@@ -92,5 +92,5 @@ export const personalInfo = {
   phone: "+2348112114537",
   formattedPhone: "+2348112114537",
   email: "favour.goldn.03@gmail.com",
-  whatsappMessage: "Hi Goldn, I have a project in mind and would like to explore how we can collaborate.",
+  whatsappMessage: "Hi PixelForge Studio, I have a project in mind and would like to explore how we can collaborate.",
 }

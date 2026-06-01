@@ -32,7 +32,7 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="text-2xl font-display font-bold tracking-tight text-white flex items-center gap-1 group">
-            GOLDN<span className="text-accent group-hover:scale-125 transition-transform">.</span>
+            PIXELFORGE STUDIO<span className="text-accent group-hover:scale-125 transition-transform">.</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

@@ -150,11 +150,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 4 — WHAT I DO */}
+      {/* SECTION 4 — WHAT WE DO */}
       <section className="py-32 px-6 md:px-12 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">What I Do</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">What WE Do</h2>
             <p className="text-gray-400 text-xl max-w-xl">Comprehensive digital services designed to turn your vision into a high-performing reality.</p>
           </div>
 

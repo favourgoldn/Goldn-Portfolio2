@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} GOLDN. All rights reserved.
+            &copy; {new Date().getFullYear()} PIXELFORGE STUDIO. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>

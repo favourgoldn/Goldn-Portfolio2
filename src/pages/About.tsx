@@ -24,7 +24,7 @@ export default function About() {
               transition={{ delay: 0.1 }}
               className="text-xl text-gray-400 font-light max-w-lg mb-10"
             >
-              I build premium digital experiences that bridge the gap between aesthetic brilliance and business performance.
+              We build premium digital experiences that bridge the gap between aesthetic brilliance and business performance.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -40,30 +40,31 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="order-1 md:order-2 aspect-[4/5] bg-primary rounded-3xl overflow-hidden"
+            className="order-1 md:order-2 aspect-[4/5] bg-gradient-to-br from-surface to-primary border border-white/10 rounded-3xl overflow-hidden flex flex-col items-center justify-center p-8 relative group"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
-              alt="Portrait of Goldn"
-              className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
-            />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,185,66,0.1)_0%,transparent_60%)] group-hover:scale-110 transition-transform duration-700" />
+            <div className="text-3xl md:text-4xl font-display font-bold tracking-tight text-white select-none z-10 flex items-center">
+              PIXELFORGE<span className="text-accent font-display">.</span>
+            </div>
+            <div className="text-xs font-mono tracking-widest text-gray-500 mt-4 uppercase z-10">
+              Creative Digital Studio
+            </div>
           </motion.div>
         </div>
       </section>
-
       {/* Story */}
       <section className="py-32 px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-display font-bold text-accent mb-8 uppercase tracking-widest text-sm">The Journey</h2>
           <div className="prose prose-invert prose-lg max-w-none text-gray-300 font-light leading-relaxed">
             <p className="mb-6">
-              I operate at the intersection of design, technology, and business strategy. My focus is not just on making things look "pretty," but on architecting systems that function flawlessly as lead generation engines and trust-building platforms.
+              We operate at the intersection of design, technology, and business strategy. My focus is not just on making things look "pretty," but on architecting systems that function flawlessly as lead generation engines and trust-building platforms.
             </p>
             <p className="mb-6">
               Over the years, I've honed my skills traversing UI/UX design, modern frontend development, and branding. This full-stack creative approach allows me to maintain a project's original vision from the first wireframe to the final deployed line of code.
             </p>
             <p>
-              I partner directly with founders, agencies, and ambitious brands to establish their authority online through distinctive design and fast, reliable software.
+              We partner directly with founders, agencies, and ambitious brands to establish their authority online through distinctive design and fast, reliable software.
             </p>
           </div>
         </div>

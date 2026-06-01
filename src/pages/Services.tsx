@@ -42,7 +42,7 @@ export default function Services() {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-400 max-w-2xl mx-auto"
           >
-            From stunning web design to complex creative development, I offer end-to-end digital solutions tailored for growth.
+            From stunning web design to complex creative development, We offer end-to-end digital solutions tailored for growth.
           </motion.p>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function App() {
         <a
           href={`tel:${personalInfo.phone}`}
           className="w-12 h-12 rounded-full bg-surface border border-white/10 text-white flex items-center justify-center hover:bg-white/5 transition-colors shadow-lg"
-          aria-label="Call Goldn"
+          aria-label="Call PixelForge Studio"
         >
           <Phone size={20} />
         </a>
@@ -35,7 +35,7 @@ export default function App() {
           className="w-14 h-14 rounded-full bg-accent text-primary flex items-center justify-center hover:bg-amber-400 transition-colors shadow-xl shadow-accent/20"
           aria-label="Chat on WhatsApp"
         >
-          <MessageCircle size={28} />
+          <MessageCircle size={29} />
         </a>
       </div>
     </div>
