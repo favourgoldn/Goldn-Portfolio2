@@ -89,8 +89,8 @@ export const processSteps = [
 ];
 
 export const personalInfo = {
-  phone: "+2348032507515",
-  formattedPhone: "+234 803 250 7515",
+  phone: "+2348112114537",
+  formattedPhone: "+2348112114537",
   email: "favour.goldn.03@gmail.com",
-  whatsappMessage: "Hi Goldn, I'm interested in starting a project.",
+  whatsappMessage: "Hi Goldn, I have a project in mind and would like to explore how we can collaborate.",
 }
