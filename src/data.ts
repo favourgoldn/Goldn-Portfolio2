@@ -89,8 +89,8 @@ export const processSteps = [
 ];
 
 export const personalInfo = {
-  phone: "+2348112114537",
-  formattedPhone: "+2348112114537",
+  phone: "+2348032507515",
+  formattedPhone: "+2348032507515",
   email: "favour.goldn.03@gmail.com",
   whatsappMessage: "Hi PixelForge Studio, I have a project in mind and would like to explore how we can collaborate.",
 }
