@@ -45,7 +45,7 @@ export default function Home() {
               Start a Project
             </Link>
             <a
-              href="https://wa.me/2348032507515"
+              href="https://wa.me/2348126385458"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 transition-colors"
