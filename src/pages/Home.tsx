@@ -99,7 +99,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-32">
-            {projects.slice(0, 4).map((project, index) => (
+            {projects.slice(0, 3).map((project, index) => (
               <div key={project.id} className="group flex flex-col md:grid md:grid-cols-12 gap-12 items-center">
                 <div className={`col-span-7 overflow-hidden rounded-2xl ${index % 2 === 1 ? 'md:order-last' : ''}`}>
                   <Link to={`/work/${project.id}`} className="block relative aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface">
