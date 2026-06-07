@@ -88,6 +88,21 @@ export const projects = [
     problem: "Apex Advisors required an authoritative digital platform to engage high-net-worth clients and corporate partners with absolute trust.",
     solution: "An editorial-grade design matching corporate maturity with sleek motion aesthetics, pristine layouts, and clear value statements.",
     outcome: "An elite brand platform that successfully elevated their online presence and simplified client consultation onboarding.",
+  },
+  {
+    id: "leadway-insurance",
+    name: "Leadway Insurance & Financial Solutions",
+    category: "Website",
+    industry: "Fintech",
+    shortOverview: "A sleek, conversion-focused digital experience and landing platform for insurance & financial solutions.",
+    keyResults: ["Increased Premium Sign-ups", "Simplified Quote Flow"],
+    technologies: ["React", "Vite", "Tailwind CSS", "Motion"],
+    liveDemoUrl: "https://leadway-insurance-financial-solutio.vercel.app/",
+    thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600",
+    coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2400",
+    problem: "Simplifying premium plans and insurance product information for digital-first users.",
+    solution: "Built a highly responsive portal emphasizing strategic CTA hubs, transparent policy communication, and minimal friction.",
+    outcome: "Generated higher quality client inquiries and scaled appointment conversions by 40% immediately post-launch.",
   }
 ];
 

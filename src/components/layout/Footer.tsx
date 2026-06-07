@@ -51,7 +51,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <a 
+                  href="https://www.linkedin.com/in/favour-goldn/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
                   <Linkedin size={18} className="group-hover:text-[#0A66C2] transition-colors" /> LinkedIn
                 </a>
               </li>
@@ -61,7 +66,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <a 
+                  href="https://github.com/favourgoldn/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
                   <Github size={18} className="group-hover:text-white transition-colors" /> GitHub
                 </a>
               </li>
