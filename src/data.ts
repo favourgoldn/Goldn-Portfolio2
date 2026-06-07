@@ -122,5 +122,5 @@ export const personalInfo = {
   phone: "+2348126385458",
   formattedPhone: "+2348126385458",
   email: "favour.goldn.03@gmail.com",
-  whatsappMessage: "Hi PixelForge Studio, I have a project in mind and would like to explore how we can collaborate.",
+  whatsappMessage: "Hello PixelForge Studio, I have a project in mind and would like to explore how we can collaborate.",
 }
