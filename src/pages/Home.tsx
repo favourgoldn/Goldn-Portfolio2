@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { projects, services, processSteps } from '../data';
+import { projects, services, processSteps, personalInfo } from '../data';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function Home() {
@@ -45,7 +45,7 @@ export default function Home() {
               Start a Project
             </Link>
             <a
-              href="https://wa.me/2348126385458"
+              href={`https://wa.me/${personalInfo.phone.replace('+', '')}?text=${encodeURIComponent(personalInfo.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 transition-colors"

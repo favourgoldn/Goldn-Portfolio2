@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { personalInfo } from '../../data';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -109,7 +110,7 @@ export function Navbar() {
             </nav>
             <div className="mt-auto">
               <a
-                href="https://wa.me/2348032507515?text=Hi%20Goldn,%20I'm%20interested%20in%20starting%20a%20project."
+                href={`https://wa.me/${personalInfo.phone.replace('+', '')}?text=${encodeURIComponent(personalInfo.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-4 text-center rounded-full bg-accent text-primary font-bold text-lg"
