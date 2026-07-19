@@ -7,7 +7,7 @@ import { personalInfo } from '../../data';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Work', path: '/work' },
+  { name: 'Portfolio', path: '/work' },
   { name: 'Services', path: '/services' },
   { name: 'Testimonials', path: '/testimonials' },
 ];

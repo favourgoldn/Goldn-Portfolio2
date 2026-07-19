@@ -27,7 +27,7 @@ export default function Work() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-display font-bold leading-tight mb-8 text-slate-900"
           >
-            Selected <span className="text-accent">Work.</span>
+            Selected <span className="text-accent">Portfolio.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

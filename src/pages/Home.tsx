@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { projects, services, processSteps, personalInfo } from '../data';
-import { ArrowUpRight } from 'lucide-react';
+import { services, processSteps, personalInfo } from '../data';
 
 export default function Home() {
   return (
@@ -82,71 +81,6 @@ export default function Home() {
               <span className="text-slate-600 text-sm font-medium">{stat.label}</span>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* SECTION 3 — FEATURED WORK */}
-      <section className="py-32 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-4">Selected Work</h2>
-              <p className="text-slate-600 text-xl max-w-xl">A showcase of recent premium digital experiences built to elevate brands and drive results.</p>
-            </div>
-            <Link to="/work" className="group flex items-center gap-2 text-slate-900 font-semibold pb-2 border-b border-slate-300 hover:border-accent transition-colors">
-              View All Projects <ArrowUpRight size={20} className="group-hover:text-accent transition-colors group-hover:-translate-y-1 group-hover:translate-x-1 duration-300" />
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-32">
-            {projects.slice(0, 3).map((project, index) => (
-              <div key={project.id} className="group flex flex-col md:grid md:grid-cols-12 gap-12 items-center">
-                <div className={`col-span-7 overflow-hidden rounded-2xl shadow-lg border border-sky-100/50 ${index % 2 === 1 ? 'md:order-last' : ''}`}>
-                  <Link to={`/work/${project.id}`} className="block relative aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-white">
-                    <img 
-                      src={project.thumbnail} 
-                      alt={project.name} 
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out opacity-95 group-hover:opacity-100"
-                    />
-                    <div className="absolute inset-0 bg-sky-900/5 group-hover:bg-transparent transition-colors duration-500" />
-                  </Link>
-                </div>
-                <div className="col-span-5 flex flex-col gap-6">
-                  <div className="flex gap-3 mb-2">
-                    <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider border border-sky-100 bg-white/80 rounded-full text-slate-600">{project.category}</span>
-                    <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider border border-sky-100 bg-white/80 rounded-full text-slate-600">{project.industry}</span>
-                  </div>
-                  <h3 className="text-3xl md:text-4xl font-display font-bold text-slate-900">{project.name}</h3>
-                  <p className="text-slate-600 text-lg leading-relaxed">{project.shortOverview}</p>
-                  
-                  <ul className="flex flex-col gap-2 mt-2">
-                    {project.keyResults.map(result => (
-                      <li key={result} className="flex items-center gap-2 text-slate-700 font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent" /> {result}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="flex flex-wrap gap-4 mt-8">
-                    <Link
-                      to={`/work/${project.id}`}
-                      className="px-6 py-3 rounded-full bg-slate-900 text-white font-medium hover:bg-slate-800 transition-colors shadow-sm"
-                    >
-                      View Case Study
-                    </Link>
-                    <a
-                      href={project.liveDemoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-3 rounded-full border border-sky-200 text-slate-800 bg-white/40 hover:bg-sky-50 font-medium transition-colors flex items-center gap-2 shadow-sm"
-                    >
-                      Live Demo <ArrowUpRight size={18} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
