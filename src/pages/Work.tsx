@@ -20,12 +20,12 @@ export default function Work() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="pt-24 pb-12 px-6 md:px-12 bg-surface border-b border-white/5">
+      <section className="pt-32 pb-12 px-6 md:px-12 bg-white/40 backdrop-blur-md border-b border-sky-100">
         <div className="max-w-7xl mx-auto">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-display font-bold leading-tight mb-8"
+            className="text-5xl md:text-7xl font-display font-bold leading-tight mb-8 text-slate-900"
           >
             Selected <span className="text-accent">Work.</span>
           </motion.h1>
@@ -33,23 +33,23 @@ export default function Work() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-gray-400 max-w-2xl"
+            className="text-xl text-slate-600 max-w-2xl"
           >
             A collection of digital experiences designed to elevate brands and drive measurable business impact.
           </motion.p>
         </div>
       </section>
 
-      <section className="py-12 px-6 md:px-12 sticky top-[80px] z-40 bg-primary/95 backdrop-blur-md border-b border-white/5">
+      <section className="py-6 px-6 md:px-12 sticky top-[72px] z-40 bg-white/80 backdrop-blur-md border-b border-sky-100 shadow-sm">
         <div className="max-w-7xl mx-auto flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
           {categories.map(cat => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`whitespace-nowrap px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${
+              className={`whitespace-nowrap px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${
                 activeFilter === cat 
-                  ? 'bg-white text-primary border-white' 
-                  : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
+                  ? 'bg-accent text-white border-accent shadow-sm' 
+                  : 'bg-white/40 text-slate-600 border-sky-100 hover:border-accent hover:bg-white'
               }`}
             >
               {cat}
@@ -72,25 +72,25 @@ export default function Work() {
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="group flex flex-col gap-6"
                 >
-                  <Link to={`/work/${project.id}`} className="block relative aspect-[4/3] overflow-hidden rounded-2xl bg-surface">
+                  <Link to={`/work/${project.id}`} className="block relative aspect-[4/3] overflow-hidden rounded-2xl bg-white border border-sky-100/50 shadow-sm">
                     <img 
                       src={project.thumbnail} 
                       alt={project.name} 
                       className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
-                    <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-sky-900/5 group-hover:bg-transparent transition-colors duration-500" />
                   </Link>
                   <div>
                     <div className="flex gap-3 mb-3">
-                      <span className="text-xs font-mono text-accent">{project.category}</span>
-                      <span className="text-xs font-mono text-gray-500">// {project.industry}</span>
+                      <span className="text-xs font-semibold uppercase font-sans text-accent">{project.category}</span>
+                      <span className="text-xs font-semibold uppercase font-sans text-slate-500">// {project.industry}</span>
                     </div>
                     <Link to={`/work/${project.id}`}>
-                      <h3 className="text-2xl md:text-3xl font-display font-bold group-hover:text-accent transition-colors">{project.name}</h3>
+                      <h3 className="text-2xl md:text-3xl font-display font-bold text-slate-900 group-hover:text-accent transition-colors">{project.name}</h3>
                     </Link>
                     <div className="flex gap-2 flex-wrap mt-4">
                       {project.technologies.slice(0,3).map(tech => (
-                         <span key={tech} className="px-3 py-1 bg-surface border border-white/5 rounded-md text-xs text-gray-400">
+                         <span key={tech} className="px-3 py-1 bg-white border border-sky-100 rounded-md text-xs font-semibold text-slate-600">
                            {tech}
                          </span>
                       ))}
@@ -101,7 +101,7 @@ export default function Work() {
             </AnimatePresence>
             
             {filteredProjects.length === 0 && (
-              <div className="col-span-full py-20 text-center text-gray-500">
+              <div className="col-span-full py-20 text-center text-slate-500">
                 <p>No projects found for this category.</p>
               </div>
             )}

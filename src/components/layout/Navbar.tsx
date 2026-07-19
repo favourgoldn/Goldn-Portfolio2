@@ -28,11 +28,11 @@ export function Navbar() {
     <>
       <header
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-surface/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
+          isScrolled ? 'bg-white/70 backdrop-blur-md border-b border-sky-100/50 py-4 shadow-sm' : 'bg-transparent py-6'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          <Link to="/" className="text-2xl font-display font-bold tracking-tight text-white flex items-center gap-1 group">
+          <Link to="/" className="text-2xl font-display font-bold tracking-tight text-slate-900 flex items-center gap-1 group">
             PIXELFORGE STUDIO<span className="text-accent group-hover:scale-125 transition-transform">.</span>
           </Link>
 
@@ -43,7 +43,7 @@ export function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   `text-sm font-medium transition-colors hover:text-accent ${
-                    isActive ? 'text-accent' : 'text-gray-400'
+                    isActive ? 'text-accent' : 'text-slate-600'
                   }`
                 }
               >
@@ -55,14 +55,14 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               to="/contact"
-              className="px-6 py-2.5 rounded-full bg-white text-primary font-medium text-sm hover:bg-gray-100 transition-colors"
+              className="px-6 py-2.5 rounded-full bg-accent text-white font-medium text-sm hover:bg-sky-700 shadow-sm shadow-sky-100/50 transition-all"
             >
               Book a Project
             </Link>
           </div>
 
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-slate-900 hover:text-accent transition-colors"
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open Menu"
           >
@@ -77,10 +77,10 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-[60] bg-primary flex flex-col pt-24 px-6 pb-10"
+            className="fixed inset-0 z-[60] bg-white/95 backdrop-blur-xl flex flex-col pt-24 px-6 pb-10"
           >
             <button
-              className="absolute top-6 right-6 text-white"
+              className="absolute top-6 right-6 text-slate-900 hover:text-accent transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               <X size={32} />
@@ -91,7 +91,7 @@ export function Navbar() {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                    isActive ? 'text-accent' : 'text-white'
+                    isActive ? 'text-accent' : 'text-slate-800'
                   }
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -101,7 +101,7 @@ export function Navbar() {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                    isActive ? 'text-accent' : 'text-white'
+                    isActive ? 'text-accent' : 'text-slate-800'
                 }
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -113,7 +113,7 @@ export function Navbar() {
                 href={`https://wa.me/${personalInfo.phone.replace('+', '')}?text=${encodeURIComponent(personalInfo.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full py-4 text-center rounded-full bg-accent text-primary font-bold text-lg"
+                className="block w-full py-4 text-center rounded-full bg-accent text-white font-bold text-lg hover:bg-sky-700 transition-colors shadow-lg shadow-sky-100"
               >
                 Chat on WhatsApp
               </a>
